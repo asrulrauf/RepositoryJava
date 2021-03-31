@@ -29,13 +29,10 @@ public class SignatureV1 {
     
     public void getSignature() throws Exception {
         // certificate location
-        String privateKeyFile = "G:\\BNI Source\\svn\\BNI-SOA-v9_dev\\promotions\\source\\CR23215_PENGEMBANGAN_FITUR_INQUIRY_HOLD_AMOUNT\\Src_DataPower\\cryptocert\\bni_public_kecy.p12";
-        // certificate password G:\BNI Master Project\CR23215_PENGEMBANGAN_FITUR_INQUIRY_HOLD_AMOUNT
+        String privateKeyFile = "{Path}";
         String password = "ilcs123";
         // concatenated string
-        String data = "PELINDO2"+""+"0115476208"; //HOLD Release Signanute
-//        String data = "PELINDO2"+"0115476151"+"0115476208"+"2018-08-09"+"2018-08-10"; //HOLD Release Signanute
-
+        String data = "{Param}"+"{Param}"+"{Param}";
         KeyStore keystore = KeyStore.getInstance("PKCS12");
         keystore.load(new FileInputStream(privateKeyFile), password.toCharArray());
         // PrivateKey key = (PrivateKey) keystore.getKey(alias, password.toCharArray());
