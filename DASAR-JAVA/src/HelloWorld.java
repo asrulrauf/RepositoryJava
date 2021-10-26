@@ -8,7 +8,7 @@ public class HelloWorld {
         var firsName = "Asrul";
         var lastName = "Rauf";
 
-        System.out.println((firsName + " " + lastName).replace("Asrul Rauf", "Ode"));
+        System.out.println((firsName + " " + lastName).replace("Asrul Rauf coba coba", "Ode"));
 
     }
 
